@@ -1,7 +1,7 @@
 # My Course Content
 this is my code content for python classes at digipodium
 
--[] python basics
+- [ ] python basics
 - data structures
 - functions & classes
 - data analytics
