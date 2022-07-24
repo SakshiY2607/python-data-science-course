@@ -1,0 +1,23 @@
+from turtle import *
+#forward(100)    #fd() is the shortcut function of forward()
+# left(36)       #lt() is the shortcut function of left()
+#forward(100)
+l#eft(36)
+#forward(100)
+#left(36)
+#forward(100)
+#left(36)
+#forward(100)
+#left(36)
+#forward(100)
+#left(36)
+#forward(100)
+#left(36)
+#forward(100)
+#left(36)
+#forward(100)
+#left(36)
+#forward(100)
+#mainloop()
+
+
