@@ -1,11 +1,11 @@
 from turtle import *
 speed('slow')
-pencolor('black')
-bgcolor('light blue')
+pencolor('blue')
+bgcolor('white')
 pensize(10)
 size=100
 side=4
-fillcolor ='white'
+fillcolor('light blue')
 begin_fill()
 for i in range(side):
     fd(size)
