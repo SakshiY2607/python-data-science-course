@@ -3,7 +3,7 @@ win_count=0
 lose_count =0
 dice =['1','2','3','4','5','6']
 n=0
-while (n!=3):
+while True:
     input('press enter to 🎲roll dice')
     out=randint(1,6)
 
@@ -21,6 +21,8 @@ while (n!=3):
     elif lose_count ==3:
         print('you lose 💀')  
         break
+else:
+        print('get lost 🛴')
 
 
 
