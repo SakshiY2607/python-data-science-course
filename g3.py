@@ -1,0 +1,41 @@
+import pgzrun
+from random import randint #important
+HEIGHT =500
+WIDTH=600
+p=Actor('ironman',(100,100))
+c=Actor('cookie')
+c.x=randint(64,WIDTH-64) #so that cookie is on screen not out of the screen
+c.y=randint(64,HEIGHT-64)
+score=0
+speed=3
+def draw():
+    #screen.clear() #if screen.clear()is not applied it will leave its path on screen(blueprint)
+    screen.fill('black')
+    p.draw()
+    c.draw()
+    screen.draw.text(f'score:{score}',(WIDTH-80,10))
+def update():
+    player_control()
+    update_score()
+
+def update_score():
+    global score
+    if p.colliderect(c):
+        score+=1
+        c.pos=(randint(64,WIDTH-64),randint(64,HEIGHT-64))
+        sounds.eating2.play()
+        sounds.bgmusic.play()
+def player_control():
+    if keyboard.RIGHT and not p.right>WIDTH:
+        p.x+=speed
+        p.angle=-10
+    elif keyboard.LEFT and not p.left<0:
+        p.x+=-speed
+        p.angle=10
+    elif keyboard.DOWN and not p.bottom >HEIGHT:
+        p.y+=speed
+    elif keyboard.UP and not p.top<0:
+        p.y+=-speed
+    else:
+        p.angle=0 #after leaving key on keyboard the ironman will come on angle 0
+pgzrun.go()    #outside the function 
